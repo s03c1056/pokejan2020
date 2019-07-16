@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "TTEditMirrorWritingGothic";
+  src: url(../font/TTEditMirrorWritingGothic.ttf);
+}
+
+body {
+  margin: 0px;
+  width: 1080px;
+  height: 1920px;
+  font-family: TTEditMirrorWritingGothic;
+  font-size: 40px;
+}
+.box {
+  width: 1080px;
+  height: 640px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+#push {
+  z-index: 110;
+  width: 1080px;
+  height: 100px;
+  top: 220px;
+  left: 0px;
+  position: absolute;
+  /* background-color: aqua; */
+  text-align: center;
+  font-size: 80px;
+  color: white;
+  animation: push 1s infinite linear 0s both;
+}
+@keyframes push {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#text {
+  z-index: 110;
+  width: 1080px;
+  height: 60px;
+  top: 550px;
+  left: 0px;
+  position: absolute;
+  /* background-color: aqua; */
+  text-align: center;
+}
+#textBox {
+  z-index: 100;
+  width: 1080px;
+  height: 640px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  background: url(img/textBox.png);
+}
+
+/* /////////////////////////////////////////ここまで統一 */
+#player {
+  z-index: 100;
+  width: 640px;
+  height: 640px;
+  top: 0px;
+  left: 440px;
+  position: absolute;
+  background: url(img/player.png);
+  animation: player 12s infinite linear 0s both;
+}
+@keyframes player {
+  0% {
+    transform: translateX(-1080px);
+  }
+  20% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-150px);
+  }
+  80% {
+    transform: translateX(790px);
+  }
+  100% {
+    transform: translateX(790px);
+  }
+}
+#pikachu {
+  z-index: 100;
+  width: 640px;
+  height: 640px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  background: url(img/pikachu.png);
+  animation: pikachu 12s infinite linear 0s both;
+}
+@keyframes pikachu {
+  0% {
+    transform: translateX(1080px);
+  }
+  20% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(60px);
+  }
+  80% {
+    transform: translateX(-700px);
+  }
+  100% {
+    transform: translateX(-700px);
+  }
+}

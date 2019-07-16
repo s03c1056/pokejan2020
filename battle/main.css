@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "TTEditMirrorWritingGothic";
+  src: url(../font/TTEditMirrorWritingGothic.ttf);
+}
+
+* {
+  margin: 0;
+  /* color: white; */
+
+  /* border: 1px solid black; */
+}
+
+p {
+  font-weight: bold;
+}
+
+body {
+  width: 1080px;
+  height: 1920px;
+  background: black;
+  font-family: TTEditMirrorWritingGothic;
+}
+
+button{
+  font-family: TTEditMirrorWritingGothic;
+}
+
+.area {
+  width: 1080px;
+  height: 640px;
+  border: 1px solid white;
+}
+
+.naviArea {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border: 1px solid black;
+}
+
+.navi {
+  width: 1060px;
+  height: 100px;
+  display: flex;
+  border-radius: 10px;
+  background: white;
+}
+
+.navi_text {
+  width: 700px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text p {
+  text-align: center;
+}
+
+.navi_select {
+  width: 380px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.playerArea {
+  display: flex;
+}
+
+.computerArea {
+  display: flex;
+}
+
+.left {
+  width: 540px;
+  height: 640px;
+}
+
+.right {
+  width: 540px;
+  height: 640px;
+}
+
+.player_left {
+  width: 440px;
+  height: 640px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.player_right {
+  width: 640px;
+  height: 640px;
+}
+
+.status {
+  width: 380px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.player_status {
+  margin-bottom: 120px;
+}
+
+.pc_status {
+  margin-top: 20px;
+}
+
+.hp {
+  width: 380px;
+}
+
+.pc_left {
+}
+
+.pc_right {
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  border-radius:5px;
+  width:300px;
+  margin:5px;
+  border:none;
+  background:none;
+  font-weight:bold;
+}
