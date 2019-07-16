@@ -15,6 +15,9 @@ async function start() {
   document.onkeydown = function() {
     location.href = "../demo/demo.html";
   };
+  document.ontouchstart = function() {
+    location.href = "../demo/demo.html";
+  };
   document.getElementById("textBox").style.display = "none";
   await sleep(3000);
   document.getElementById("textBox").style.display = "block";
